@@ -42,8 +42,22 @@
     
     <canvas id="myChart"></canvas>
   </div>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-  <script src="index.js"></script>
+  <script src="index.js"></script> 
+  <script src="db.js"></script>
+  <script>
+   if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js?v2', {
+        scope: '.' // <--- THIS BIT IS REQUIRED
+    }).then(function(registration) {
+        // Registration was successful
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+    }, function(err) {
+        // registration failed :(
+        console.log('ServiceWorker registration failed: ', err);
+    });
+}
+</script>
 </body>
 </html>
