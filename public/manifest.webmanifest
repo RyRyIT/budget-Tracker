@@ -3,12 +3,17 @@
     "name": "Budget-Tracker",
     "icons": [
         {
-            "src": "/public/icons/icon-192x192.png",
-            "sizes": "192x192",
+            "src": "/icons/icon-192x192.png",
+            "sizes": "92x92",
             "type": "image/png"
-        }
+          },
+          {
+              "src": "/icons/icon-512x512.png",
+              "sizes": "512x512",
+              "type": "image/png"
+            }
     ],
-    "start_url": "/",
+    "start_url": ".",
     "background_color": "#ffffff",
     "display": "standalone",
     "theme_color": "#ffffff"
